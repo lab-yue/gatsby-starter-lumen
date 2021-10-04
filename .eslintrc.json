@@ -19,6 +19,29 @@
     "rules": {
       "comma-dangle": 0,
       "import/imports-first": 0,
+      "import/order": [
+        2,
+        {
+          "alphabetize": { "order": "asc" },
+          "groups": [
+            "builtin",
+            "external",
+            "internal",
+            "index",
+            "sibling",
+            "parent",
+            "object"
+          ],
+          "pathGroups": [
+            {
+              "pattern": "react*",
+              "group": "builtin",
+              "position": "before"
+            }
+          ],
+          "pathGroupsExcludedImportTypes": ["react", "builtin"]
+        }
+      ],
       "global-require": 0,
       "class-methods-use-this": 0,
       "arrow-body-style": [

@@ -1,9 +1,9 @@
 // @flow strict
 import React from 'react';
-import Helmet from 'react-helmet';
 import type { Node as ReactNode } from 'react';
-import { useSiteMetadata } from '../../hooks';
+import Helmet from 'react-helmet';
 import styles from './Layout.module.scss';
+import { useSiteMetadata } from '../../hooks';
 
 type Props = {
   children: ReactNode,

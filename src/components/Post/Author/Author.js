@@ -1,8 +1,8 @@
 // @flow strict
 import React from 'react';
-import { getContactHref } from '../../../utils';
 import styles from './Author.module.scss';
 import { useSiteMetadata } from '../../../hooks';
+import { getContactHref } from '../../../utils';
 
 const Author = () => {
   const { author } = useSiteMetadata();
